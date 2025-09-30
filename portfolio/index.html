@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="#home" class="logo">Your Name</a>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section id="hero">
+      <h1>Hi — I'm Your Name</h1>
+      <p>Frontend developer. I make things on the web.</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Short bio — replace this text.</p>
+    </section>
+
+    <div class="projects-grid">
+  <article class="project">
+    <h3>Portfolio Website</h3>
+    <p>A personal site showcasing my skills and work.</p>
+  </article>
+
+  <article class="project">
+    <h3>Weather App</h3>
+    <p>Built using HTML, CSS, and JavaScript to fetch live weather data.</p>
+  </article>
+
+  <article class="project">
+    <h3>Todo List</h3>
+    <p>A simple task manager app with add/remove functionality.</p>
+  </article>
+</div>
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: youremail@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
